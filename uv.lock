@@ -144,13 +144,17 @@ name = "datasus-srag-forecasting"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "fastparquet" },
     { name = "pandas" },
+    { name = "pyarrow" },
     { name = "pysus" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "fastparquet", specifier = ">=2024.11.0" },
     { name = "pandas", specifier = ">=2.3.3" },
+    { name = "pyarrow", specifier = ">=24.0.0" },
     { name = "pysus", specifier = ">=1.0.1" },
 ]
 
